@@ -4,6 +4,7 @@
 from mylib import cli, __app_name__
 import typer
 
+
 def main():
     cli.app()
 
