@@ -1,7 +1,7 @@
 """Top level package for mytodo"""
 # my_lib/__init__.py
 
-__app_name__= "mytodo"
+__app_name__ = "mytodo"
 __version__ = "0.1.1"
 
 
@@ -20,5 +20,5 @@ ERRORS = {
     FILE_ERROR: "config file error",
     DB_READ_ERROR: "database read error",
     DB_WRITE_ERROR: "database write error",
-    ID_ERROR: "todo id error"
+    ID_ERROR: "todo id error",
 }
