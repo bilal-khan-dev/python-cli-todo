@@ -8,13 +8,13 @@ import typer
 
 app = typer.Typer()
 
-def _version_callback(value: bool):
+def _version_callback(value: bool) -> None:
     """
     Display app name, version and exit
     """
     if value:
         typer.echo(f"{__app_name__} version f{__version__}")
-        typer.Exit()
+        raise typer.Exit()
 
 
 app.callback()
@@ -31,4 +31,4 @@ def main(
     """
     Returns the version of mytodo CLI
     """
-
+    return
