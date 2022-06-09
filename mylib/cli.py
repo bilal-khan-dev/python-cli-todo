@@ -6,6 +6,8 @@ from mylib import __app_name__, __version__
 
 import typer
 
+
+
 app = typer.Typer()
 
 def _version_callback(value: bool) -> None:
@@ -17,7 +19,7 @@ def _version_callback(value: bool) -> None:
         raise typer.Exit()
 
 
-app.callback()
+@app.callback()
 def main(
     version: Optional[bool] = typer.Option(
         None, 
