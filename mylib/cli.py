@@ -1,6 +1,7 @@
 """This module provides name and version to mytodo CLI"""
 # mylib/cli.py
 
+
 from typing import Optional
 from mylib import __app_name__, __version__
 

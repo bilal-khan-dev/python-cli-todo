@@ -6,4 +6,7 @@ format:
 lint: 
 	pylint --disable=R,C mylib/*.py tests/*.py
 
+test:
+	python3 -m pytest tests/
+
 all: install format lint
