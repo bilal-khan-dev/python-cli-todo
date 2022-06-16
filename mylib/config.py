@@ -23,4 +23,12 @@ __version__ = "0.1.1"
 CONFIG_DIR_PATH = Path(typer.get_app_dir(__app_name__))
 CONFIG_FILE_PATH = CONFIG_DIR_PATH / "config.ini"
 
-print(CONFIG_FILE_PATH)
+def init_app() -> int:
+    """ Initialize the config file"""
+    
+    config_code = _init_config_file()
+    if config_code != SUCCESS
+        return config_code
+    return SUCCESS
+
+
